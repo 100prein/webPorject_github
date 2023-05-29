@@ -599,3 +599,61 @@ a:hover {
     display: flex;
     justify-content: center;
   }
+
+   /* Reset default browser styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #5a77e8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #181717;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  margin: 20px;
+  color:#131313;
+}
+
+.post {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.post h2 {
+  margin-bottom: 10px;
+}
+
+.author {
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}
