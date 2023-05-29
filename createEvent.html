@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar_container">
-          <a href="index.html" id="navbar_logo"><i class="fa-regular fa-handshake"></i>LinkUps</a>
+          <a href="index.html" id="navbar_logo"><i class="fa-solid fa-link" style="color: #ffffff;"></i>LinkUps</a>
           <div class="navbar_toggle" id="mobile-menu">
             <span class="bar"></span> <span class="bar"></span>
             <span class="bar"></span>
@@ -35,41 +35,43 @@
           </ul>
         </div>
       </nav>  
-      <section class="posted_event">
-        <div>
-            <label for="image-input">
-                <img class="posted_event_item" id="image-preview" src="./src/image_placeholder.png" alt="Image Preview">
-            </label>
-            <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
-          <form action="">
-            <div class="input-field">
-                <input type="title" placeholder="Title">
-            </div>
+      <div class="main3">
+        <section class="posted_event">
+          <div>
+              <label for="image-input">
+                  <img class="posted_event_item" id="image-preview" src="./src/image_placeholder.png" alt="Image Preview">
+              </label>
+              <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
             <form action="">
-                <textarea placeholder="Description" id="bio" name="bio" rows="6" cols="50" required></textarea><br><br>
+              <div class="input-field">
+                  <input type="title" placeholder="Title">
+              </div>
+              <form action="">
+                  <textarea placeholder="Description" id="bio" name="bio" rows="6" cols="50" required></textarea><br><br>
+              </form>
             </form>
-          </form>
-          <div class="user_action">
-            <button class="main_btn"><a href="postEventConfirm.html">Post Event</a></button>
+            <div class="user_action">
+              <button class="main_btn"><a href="postEventConfirm.html">Post Event</a></button>
+            </div>
           </div>
-        </div>
-        <div>
-            <div class="event_item_container">
-              <img class="posted_event_item2" src="./src/image_placeholder.png" />
-              <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
-              <img class="posted_event_item2" src="./src/image_placeholder.png" />
-              <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
-              <img class="posted_event_item2" src="./src/image_placeholder.png" />
-              <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
-              <img class="posted_event_item2" src="./src/image_placeholder.png" />
-              <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
-            </div>
-            <div>
-              <h2 class="sponsor_title">Sponsor</h2>
-              <img class="posted_event_item2" src="./src/lagcc4.jpg" />
-            </div>
-        </div>
-      </section>
+          <div>
+              <div class="event_item_container">
+                <img class="posted_event_item2" src="./src/image_placeholder.png" />
+                <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
+                <img class="posted_event_item2" src="./src/image_placeholder.png" />
+                <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
+                <img class="posted_event_item2" src="./src/image_placeholder.png" />
+                <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
+                <img class="posted_event_item2" src="./src/image_placeholder.png" />
+                <input id="image-input" type="file" accept="image/*" onchange="previewImage(event)">
+              </div>
+              <div>
+                <h2 class="sponsor_title">Sponsor</h2>
+                <img class="posted_event_item2" src="./src/lagcc4.jpg" />
+              </div>
+          </div>
+        </section>
+      </div>
 </body>
 <footer>
   <section class="footer_section">
