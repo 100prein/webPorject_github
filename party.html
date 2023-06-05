@@ -61,7 +61,7 @@
       </section>
        <!--Chat bot-->
        <div class="chat-bar-collapsible">
-        <button id="chat-button" type="button" class="collapsible">Hey! Let me know if you need help!
+        <button id="chat-button" type="button" class="collapsible" onclick="toggleChat()">Hey! Let me know if you need help!
             <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
         </button>
         <div class="content">
@@ -74,34 +74,39 @@
                             <h5 id="chat-timestamp"></h5>
                             <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
                         </div>
-php
-Copy code
-                    <!-- User input box -->
-                    <div class="chat-bar-input-block">
-                        <div id="userInput">
-                            <input id="textInput" class="input-box" type="text" name="msg"
-                                placeholder="Tap 'Enter' to send a message">
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+    
+                            <div class="chat-bar-icons">
+                                <i id="heart-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="send-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+    
+                        <div id="chat-bar-bottom">
                             <p></p>
                         </div>
-
-                        <div class="chat-bar-icons">
-                            <i id="heart-icon" style="color: crimson;" class="fa fa-fw fa-heart"
-                                onclick="heartButton()"></i>
-                            <i id="send-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                onclick="sendButton()"></i>
-                        </div>
+    
                     </div>
-
-                    <div id="chat-bar-bottom">
-                        <p></p>
-                    </div>
-
+                    <script>
+                      function toggleChat() {
+                        var content = document.querySelector('.content');
+                        content.classList.toggle('collapsed');
+                      }
+                    </script>
                 </div>
+    
             </div>
-
         </div>
     </div>
-</div>
+    <!--End of chatbot, by Gina Leon-->
     </div>
 </body>
 <footer>

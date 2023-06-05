@@ -2,7 +2,7 @@ function getBotResponse(input) {
 
 
     // Simple responses
-    if (input == "hello") {
+    if (input == "hello" || input == "hi") {
         return "Hello there!";
     } else if (input == "goodbye") {
         return "Talk to you later!";
@@ -40,7 +40,9 @@ function getBotResponse(input) {
         return "To volunteer for an event, reach out to the event organizer or visit the event website for volunteer opportunities. They will provide you with further instructions on how to get involved.";
     } else if (input == "are outside food and drinks allowed at the event?"|| input == "food") {
         return "The policy regarding outside food and drinks at events can vary. Check the event details or contact the event organizer to inquire about their policy on bringing outside food and drinks.";
-    } else if (input == "thank you"|| input == "thanks" || "thx") {
+    } else if (input == "thank you") {
+        return "You're welcome! I'm glad I could help. If you have any more questions, feel free to ask!";
+    }  else if (input == "thx") {
         return "You're welcome! I'm glad I could help. If you have any more questions, feel free to ask!";
     } else {
         return "I'm sorry, I couldn't understand your question. Please try asking something else!";
