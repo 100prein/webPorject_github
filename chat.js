@@ -66,10 +66,10 @@ function buttonSendText(sampleText) {
   // }, 1000);
 }
 
-function toggleCollapse() {
+/*function toggleCollapse() {
   var content = document.querySelector('.content');
   content.classList.toggle('collapsed');
-}
+}*/
 
 function sendButton() {
   getResponse();
