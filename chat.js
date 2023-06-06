@@ -1,4 +1,5 @@
 
+document.cookie = "cookieName=cookieValue; SameSite=None; Secure";
 
 //DOM
 document.addEventListener("DOMContentLoaded", function() {
@@ -23,20 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
   firstBotMessage();
 });
 
-// Retrieves the response
-function getHardResponse(userText) {
-  let botResponse = getBotResponse(userText);
-  let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
-  document.getElementById("chatbox").innerHTML += botHtml;
-  document.getElementById("chat-bar-bottom").scrollIntoView(true);
-}
-
 // Gets the text from the input box and processes it
 function getResponse() {
   let userText = document.getElementById("textInput").value;
 
   if (userText == "") {
-    userText = "I love Code Palace!";
+    userText = "";
   }
 
   let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -48,6 +41,16 @@ function getResponse() {
     getHardResponse(userText);
   }, 1000);
 }
+
+// Retrieves the response
+function getHardResponse(userText) {
+  let botResponse = getBotResponse(userText);
+  let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
+  document.getElementById("chatbox").innerHTML += botHtml;
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
+}
+
+
 
 // Handles sending text via button clicks
 function buttonSendText(sampleText) {
@@ -63,13 +66,20 @@ function buttonSendText(sampleText) {
   // }, 1000);
 }
 
+function toggleCollapse() {
+  var content = document.querySelector('.content');
+  content.classList.toggle('collapsed');
+}
+
 function sendButton() {
   getResponse();
 }
 
 function heartButton() {
-  buttonSendText("Heart clicked!");
+  buttonSendText("❤️");
 }
+
+
 
 // Press enter to send a message DOM
 window.addEventListener("DOMContentLoaded", function() {
@@ -83,25 +93,25 @@ window.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // Toggle chatbot visibility
-  function toggleChatbot() {
-    var chatIcon = document.getElementById("chat-icon");
-    chatIcon.classList.toggle("fa-comments-o");
-    chatIcon.classList.toggle("fa-times");
-    // Add code to show/hide the chatbot based on its current visibility state
-  }
+        // Toggle chatbot visibility
+        function toggleChatbot() {
+          var chatIcon = document.getElementById("chat-icon");
+          chatIcon.classList.toggle("fa-comments-o");
+          chatIcon.classList.toggle("fa-times");
+          // Add code to show/hide the chatbot based on its current visibility state
+        }
+        
+        // Add event listener for chat-button
+        document.getElementById("chat-button").addEventListener("click", function() {
+          toggleChatbot();
+        });
 
-  // Add event listener for chat-button
-  document.getElementById("chat-button").addEventListener("click", function() {
-    toggleChatbot();
-  });
+      });
 
-});
+//Leave that alone. Create a function in javascript that will make the chatbot go down
 
-document.addEventListener("DOMContentLoaded", function() {
-  function toggleChat() {
-  const chatContainer = document.querySelector('.chat-bar-collapsible');
-  chatContainer.classList.toggle('collapsed');
-}
-});
 
+
+ 
+
+  
