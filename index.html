@@ -1,215 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkUps</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/3ec4568325.js" crossorigin="anonymous"></script>
-    
-    <style>
-      .collapsed {
-          display: none;
-      }
-  </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar_container">
-          <a href="index.html" id="navbar_logo"><i class="fa-solid fa-link" style="color: #ffffff;"></i>LinkUps</a>
-          <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span> <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <ul class="navbar_menu">
-            <li class="navbar_item">
-              <a href="about.html" class="navbar_links">About Us</a>
-            </li>
-            <li class="navbar_item">
-              <a href="community.html" class="navbar_links">Community</a>
-            </li>
-            <li class="navbar_item">
-              <a href="forums.html" class="navbar_links">Forums</a>
-            </li>
-            <li class="navbar_item">
-              <a href="signin.html" class="navbar_links">Sign in</a>
-            </li>
-            <li class="navbar_btn">
-              <a href="premium.html" class="button">Create an event</a>
-            </li>
-          </ul>
-        </div>
-    </nav>  
-      <div class="main">
-        <div class="main_container">
-          <div class="main_content">
-            <h1>CONNECT WITH THE COMMUNITY</h1>
-            <h2>
-              ━━━━━━━━━━━━━━━━━━━━━━━
-            </h2>
-            <p>Come out and get to know your local community and businesses!</p>
-            <button class="main_btn"><a href="signup.html">Get Started</a></button>
-          </div>
-          <div class="main_img-container">
-            <h1 class="title_for_events">Upcoming Events</h1>
-            <section class="event_section">
-              <div class="event_container">
-                <div class="event_item">
-                  <img src="./src/lagcc3.jpg"/>
-                  <h3>Career Workshop for Tech at LaGuardia</h3>
-                  <h4>May 24, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>ePortfolio</title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,800;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fcd93b617c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="hero">
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="#certs">Certifications</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <div class="hero-area">
+                <div class="hero-text">
+                    <h1>Sekou Traore</h1>
+                    <p>Full Stack Developer</p>
+                    
+                    <div class="button"><a href="#about-me">About me</a></div>  
                 </div>
-                <div class="event_item">
-                  <img src="./src/party3.jpg"/>
-                  <h3>Oompa Loopa Friday Night Party</h3>
-                  <h4>May 26, 2023</h4>
-                  <p><a class="button" href="party.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/soccer1.jpg"/>
-                  <h3>Melted Cheese Soccer Club</h3>
-                  <h4>May 30, 2023</h4>
-                  <p><a class="button" href="soccer.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/fishing.jpg"/>
-                  <h3>Fishing Contest</h3>
-                  <h4>May 25, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/convo.jpg"/>
-                  <h3>Language Exchange for Beginners</h3>
-                  <h4>May 29, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/dance.jpg"/>
-                  <h3>Salsa Dance Class (for Every Level)</h3>
-                  <h4>June 12, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/business.jpg"/>
-                  <h3>Networking for Business Startups</h3>
-                  <h4>June 3, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
-                </div>
-                <div class="event_item">
-                  <img src="./src/hiking.jpg"/>
-                  <h3>Hiking and Fiesta for Singles</h3>
-                  <h4>June 12, 2023</h4>
-                  <p><a class="button" href="lagcc.html">Details</a></p>
-                </div>
-              </div>
-             </section>
-          </div>
-        </div>
+                <div class="socials">
+                    <div><a href="https://twitter.com/100prein" class="social-item"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></div>
 
+                    <div><a href="https://github.com/100prein" class="social-item" ><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg></a></div>
 
-        <!--Chat bot-->
-        <div class="chat-bar-collapsible">
-          <button id="chat-button" type="button" class="collapsible">Hey! Let me know if you need help!
-              <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o" onclick="toggleCollapse()"></i>
-          </button>
-          <div class="content collapsed">
-              <div class="full-chat-block">
+                    <div><a href="https://www.linkedin.com/in/sekou-traore-9a496b77/" class="social-item" ><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a></div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <section class="sub-section" id="about-me">
+            <div class="information">
+                <h2>About me</h2>
+                <p class="description">My name is Sekou Traore. I was born in Bronx, New York and raised until I was 10 years old. I went to Mali in 2004 to be with my mother, brother and sister. I returned to New York in 2012 to work and provide to my family in Mali as head of the household. I earned my GED/TASC in 2014. As a father of my son, I realized I must earn a degree in order to be a role model for him. I earned my associates in Programming and Software Development </p>
+            </div>
+            <div class="headshot-container">
+                <img class="headshot" src="./src/sek2_edited.jpg" alt="Sekou's photo"/>
+            </div>
+        </section>
+        <section id="project" class="sub-section-alternative sub-section">
+            <h2>Projects</h2>
+            <div class="project-container">
+
+                <!--Project One -->
+                <div class="project-card"><img src="./src/5th_season_app_land.jpg" class="project-image" alt="Project One Image"/>
+                    <h3>5th Season Weather Applications</h3>
+                    <p class="subtext">The goal is to create an application that provides weather information to users. It took the whole summer to finally develop my first application and publish it on Google Play store. It is developed with React Native, Expo CLI and Visual Code Studio IDE. No major budget was necessary to build this application.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link"  href="5thseason.html" target="_blank" >View here</a></p>
+                    <p class="subtext">
+                </div>
+
+                <!--Project Two-->
+                <div class="project-card"><img src="./src/beberavi.png" class="project-image" alt="Project Two Image"/>
+                    <h3>Beberavi Collections</h3>
+                    <p class="subtext">Welcome to Beberavi Inc. The goal of this website is to let visitors aware of Beberavi's missions and goals. My worked with my supervisor to buidl this website during the 10KSB project from LaGuardia Community College. I am excited to build this website for Beberavi Inc.</p>
+                    <hr/>
+                <p class="subtext"><a class="project-link" href="beberavi.html" target="_blank">View here</a></p>
+                </div>
+
+                <!--Project Three-->
+                <div class="project-container">
+                    <div class="project-card"><img src="./src/linkups.png" class="project-image" alt="Project Three Image"/>
+                        <h3>LinkUps</h3>
+                        <p class="subtext">This website was made during a group project from a class at LaGuardia Community College called System Analysis and Designs. My teammate build the website to basic, then I took over to make the website designed with images, buttons, logo, links and css. I helped fixing the chatbot and made it functional.There are elements to our websites such as, Context level Diagram, roles of each members, Gantt Chart, Mission and Vision Statements and more. </p>
+                        <hr/>
+                        <p class="subtext"><a class="project-link" href="linkups.html" target="_blank">View here</a></p>
+                    </div>
+                </div>
+                <<div class="project-card"><img src="./src/careerization_img.png" class="project-image" alt="Project Three Image"/>
+                    <h3>careerization</h3>
+                    <p class="subtext">Created by Sekou and my classmate, Gina Leon. Careerization is a service that assists students find or confirm their path to prefession. It provides assessments to help find their career, various paths to select, checklist on their plans, information about their role model etc... </p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="careerization.html">View here</a></p>
+                </div>
+
+                <!--Project Four-->
+                <!--<div class="project-card"><img src="src\smoking_art_technology.jpg" class="project-image" alt="Project Four Image"/>
+                    <h3>Smoking Art Tech</h3>
+                    <p class="subtext">My friend came up with an idea for creating a new business for us. I included some way to add images to the shopping cart and purchase them. The project started during Spring 2022. We are setting a plan to start our business.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://100prein.github.io/packetcodeofficial.github.io/" target="_blank">View here</a></p>
+                </div>-->
                 
-                  <!-- Message Container -->
-                  <div class="outer-container">
-                      <div class="chat-container">
-                         
-                        
-                        
-                        <!-- Messages -->
-                          <div id="chatbox">
-                              <h5 id="chat-timestamp"></h5>
-                              <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                          </div>
-
-
-
-
-                          <!-- User input box -->
-                          <div class="chat-bar-input-block">
-                              <div id="userInput">
-                                  <input id="textInput" class="input-box" type="text" name="msg"
-                                      placeholder="Tap 'Enter' to send a message">
-                                  <p></p>
-                              </div>
-      
-                              <div class="chat-bar-icons">
-                                  <i id="heart-icon" style="color: crimson;" class="fa fa-fw fa-heart"
-                                      onclick="heartButton()"></i>
-                                  <i id="send-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                      onclick="sendButton()"></i>
-                              </div>
-                          </div>
-      
-                          <div id="chat-bar-bottom">
-                              <p></p>
-                          </div>
-                          
-                      </div>
-                      <script>
-                        document.getElementById('chat-button').addEventListener('click', toggleChat);
-                
-                        function toggleCollapse() {
-                            var content = document.querySelector('.content');
-                            content.classList.toggle('collapsed');
-                        }
-                    </script>
-                 </div>
-              </div>
-          </div>
-      </div>
-      <script>
-       
-       
-
-      </script>
-      <!--End of chatbot, by Gina Leon-->
-      <script src="./response.js"></script>
-    <script src="./chat.js"></script>
-
-</body>
-<footer>
-  <section class="footer_section">
-      <div class="list_footer_section">
-          <div class="list_header_footer">Customer Care</div>
-          <ul class="footer_info">
-              <li><a href="pp.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms & Conditions</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-      </div>
-      <div>
-          <div class="list_header_footer">About Link Ups</div>
-          <ul class="footer_info">
-              <li><a href="press.html">Press</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="career.html">Career</a></li>
-          </ul> 
-      </div>
-      <div>
-          <div class="list_header_footer">Connect with us</div>
-          <ul class="footer_info_social">
-              <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-2xl icon"></i></a></li>
-              <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl icon"></i></a></li>
-              <li><a href="https://twitter.com"><i class="fa-brands fa-square-twitter fa-2xl icon"></i></a></li>
-              <li><a href="mailto:info@beberavi.com"><i class="fa-solid fa-envelope fa-2xl icon"></i></a></li>
-          </ul>
-      </div>
-      <div>
-          <div class="list_header_footer">Our Location</div>
-          <ul class="footer_info">
-              
-              <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.222899356233!2d-73.98914128930657!3d40.75712197126741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259c8d3d11573%3A0xa6d6b73e05488bf2!2sBetsy%20Antoine%20Real%20Estate!5e0!3m2!1sen!2sus!4v1684939613312!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-              
-          </ul>
-      </div>
-  </section>
-</footer>
+            </div>
+            
+            
+        </section>
+        <section id="project" class="sub-section-alternative sub-section">
+            <div id="certs">
+                <h2>Certifications</h2>
+                <img src="./src/tech_support.jpg" class="certs">
+                <img src="./src/networking.jpg" class="certs">
+                <img src="./src/operating_system.jpg" class="certs">
+                <img src="./src/sys_admin.jpg" class="certs">
+                <img src="./src/google_IT_cert.jpg" class="certs">
+                <p>You can verify at LinkedIn <div><a href="https://www.linkedin.com/in/sekou-traore-9a496b77/" class="social-item2" ><svg xmlns="http://www.w3.org/2000/svg" fill="black " width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a></div></p>
+            </div>
+        </section>
+        <footer id="contact-me">
+            <h2>Contact me</h2>
+            <p>sekou4991@icloud.com</p>
+            <p><a href="https://www.buymeacoffee.com/sekou359?new=1">Buy me a Coffee</a></p><br/>
+            Check out my<a href="https://100prein.github.io/captcoldmedia.github.io/"> <p style="color: blue"> Media Website</p></a><br/>
+            Check out<a href="https://100prein.github.io/captcoldart.github.io/"><p style="color: red"> my Arts</p> </a>
+            <a target="_blank" href="./src/Sekou_Traore.pdf">Check my resume</a>
+        
+        </footer>
+        
+        <script src="src/app.js" async defer></script>
+    </body>
 </html>
