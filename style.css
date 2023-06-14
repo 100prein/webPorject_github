@@ -451,6 +451,20 @@ form p a {
   transition: 1s;
 }
 
+.btn-field2 {
+  padding: 50px;
+  margin: 50px;
+  flex-basis: 48%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 1s;
+  padding: 20px;
+  vertical-align: center;
+}
+
 .profile {
   width: 300px;
   height: 300px;
